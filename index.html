@@ -306,6 +306,45 @@ footer .fbrand b{color:#fff;font-size:1.05rem;letter-spacing:.06em}
 }
 </style>
 <style>body{margin:0} img{max-width:100%} [hidden]{display:none!important}</style>
+<style>
+.fx{background:linear-gradient(160deg,var(--blue-xdk) 0%,var(--blue-dk) 55%,#1A4380 100%);color:#fff;scroll-margin-top:110px}
+.fx .fx-hero{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:40px;align-items:center}
+.fx-kick{font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#C9A55A;margin:0}
+.fx h2{color:#fff;font-size:clamp(2rem,4vw,3rem);margin:10px 0 4px;letter-spacing:-.01em}
+.fx-sub{font-family:var(--serif);font-style:italic;color:#9FC0EE;font-size:1.2rem;margin:0}
+.fx-meta{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0}
+.fx-meta span{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 12px;font-size:.84rem;color:#fff}
+.fx-lede{color:#D3DAE4;font-size:1.02rem;margin-top:18px;max-width:640px}
+.fx-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn.fx-ghost{color:#fff;border-color:rgba(255,255,255,.7);background:transparent}
+.btn.fx-ghost:hover{background:#fff;color:var(--blue-dk)}
+.fx-note{color:#9FC0EE;font-size:.86rem;margin-top:14px}
+.fx-facts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fx-facts li{border:1px solid rgba(201,165,90,.55);border-radius:10px;padding:18px 16px;background:rgba(255,255,255,.04)}
+.fx-facts b{display:block;font-size:2rem;line-height:1;color:#fff}
+.fx-facts span{font-size:.82rem;color:#D3DAE4;text-transform:uppercase;letter-spacing:.08em}
+.fx-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:48px}
+.fx-card{background:#fff;color:var(--text);border-radius:10px;padding:22px;border-top:4px solid #B08A3E}
+.fx-card h3{font-size:1.15rem;color:var(--ink);margin:4px 0 10px}
+.fx-card ul{margin:0;padding-left:18px;font-size:.92rem}
+.fx-card li{margin-bottom:4px}
+.fx-card li::marker{color:var(--blue)}
+.fx-tag{font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin:0}
+.fx-small{color:#D3DAE4;font-size:.86rem;margin-top:12px}
+.fx-small a{color:#fff}
+.fx-two{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+.fx-h{color:#fff;font-size:1.25rem;margin:0 0 12px}
+.fx-table{width:100%;border-collapse:collapse;background:#fff;color:var(--text);border-radius:10px;overflow:hidden;font-size:.9rem}
+.fx-table th{background:var(--soft);color:var(--ink);text-align:left;padding:10px 12px;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+.fx-table td{padding:10px 12px;border-top:1px solid var(--line);vertical-align:top}
+.fx-table td:last-child,.fx-table th:last-child{text-align:right;white-space:nowrap;font-weight:700;color:var(--ink)}
+.fx-band{margin-top:36px;border-left:3px solid #B08A3E;padding:4px 0 4px 16px}
+.fx-band p{color:#D3DAE4;margin:0}
+.fx-band b{color:#fff}
+@media (max-width:900px){.fx .fx-hero,.fx-two{grid-template-columns:1fr}.fx-grid{grid-template-columns:1fr}}
+@media (max-width:560px){.fx-facts b{font-size:1.6rem}.fx-table{font-size:.84rem}.fx-table td,.fx-table th{padding:8px}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"The Legal Lounge Forum 2027: Data, Enterprise and the Law","description":"A one-day legal forum in Harare for in-house counsel, company secretaries, compliance, risk and IT heads, business owners, practitioners, regulators and academics, with a morning plenary and two tracks: Data Protection and Tech Law; Corporate, Registrations and IP.","startDate":"2027-10-21T08:00:00+02:00","endDate":"2027-10-21T18:30:00+02:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"Harare (venue to be announced)","address":{"@type":"PostalAddress","addressLocality":"Harare","addressCountry":"ZW"}},"organizer":{"@id":"https://legalloungeorg.net/#firm"},"url":"https://legalloungeorg.net/#forum-2027","offers":{"@type":"Offer","price":"60","priceCurrency":"USD","validFrom":"2027-06-01","url":"https://legalloungeorg.net/#forum-2027"}}</script>
 </head>
 <body>
 
@@ -346,6 +385,7 @@ footer .fbrand b{color:#fff;font-size:1.05rem;letter-spacing:.06em}
         <a class="dd-btn" href="#community" aria-haspopup="true">Community <span class="car" aria-hidden="true"></span></a>
         <div class="dd-menu">
           <a href="#forum">The Forum</a>
+          <a href="#forum-2027">Forum 2027</a>
           <a href="#mooting">Mooting</a>
           <a href="#papers">Publishing House</a>
         </div>
@@ -403,6 +443,83 @@ footer .fbrand b{color:#fff;font-size:1.05rem;letter-spacing:.06em}
       <div class="svc-grid"><article class="svc" id="forum"><span class="ico"><svg viewBox="0 0 32 32"><circle cx="11" cy="11" r="4"/><circle cx="22" cy="12" r="3"/><path d="M4 26c0-4 3-7 7-7s7 3 7 7M18 21c1-1.5 2.5-2.5 4.5-2.5 3 0 5.5 2.5 5.5 6"/></svg></span><h3>The Forum</h3><p class="law">Audi alteram partem</p><div class="brieftxt"><p>The Legal Lounge Forum is a network for legal professionals across jurisdictions. It was created to give lawyers a place to connect, exchange knowledge and grow professionally alongside one another.</p><p>The Forum hosts networking events, seminars and webinars on developments in the Law, and encourages collaboration between practitioners in different countries. It is open to practising lawyers, academics and legal professionals at every stage of their careers.</p></div><ul><li>Networking</li><li>Seminars and Webinars</li><li>Cross-Border Exchange</li></ul></article><article class="svc" id="mooting"><span class="ico"><svg viewBox="0 0 32 32"><path d="M14 6l8 8M10 10l8 8M12 8l-4 4M20 16l-4 4M17 13l9 9a2 2 0 01-3 3l-9-9M4 28h12"/></svg></span><h3>Mooting</h3><p class="law">Docendo discimus · By teaching, we learn</p><div class="brieftxt"><p>A moot is a simulated court hearing in which participants argue a point of Law before a bench, as they would in an appeal. Mooting develops the skills of Legal Research, written submissions and oral advocacy.</p><p>Legal Lounge runs Moot Court Competitions for Law students and young practitioners. Participants prepare and argue cases before benches of practising lawyers, and the programme includes training in research and advocacy.</p></div><ul><li>Moot Court Competitions</li><li>Advocacy Training</li><li>Benches of Practitioners</li></ul></article><article class="svc" id="papers"><span class="ico"><svg viewBox="0 0 32 32"><path d="M16 8c-3-2-7-2.5-11-2v18c4-.5 8 0 11 2 3-2 7-2.5 11-2V6c-4-.5-8 0-11 2z"/><path d="M16 8v18"/></svg></span><h3>Publishing House</h3><p class="law">Verba volant, scripta manent · Spoken Words Fly, Written Words Remain</p><div class="brieftxt"><p>Legal Lounge maintains a Publishing House for Legal Scholarship. It publishes articles, Case Notes and commentary on developments in the Law.</p><p>The Publishing House issues periodic Calls for Papers, open to practitioners, academics and students. Submissions are reviewed before publication, and the Publishing House also prepares Practice Guides on selected areas of Law.</p></div><ul><li>Calls for Papers</li><li>Articles and Case Notes</li><li>Practice Guides</li></ul></article></div>
     </div>
   </section>
+  <section class="block fx" id="forum-2027" aria-labelledby="fx-title">
+    <div class="wrap">
+      <div class="fx-hero">
+        <div>
+          <p class="fx-kick">The Legal Lounge Forum 2027</p>
+          <h2 id="fx-title">Data, Enterprise and the Law</h2>
+          <p class="fx-sub">Building a compliant, competitive Zimbabwe</p>
+          <p class="fx-meta"><span>Thursday 21 October 2027</span><span>Harare</span><span>One day</span><span>About 100 delegates</span></p>
+          <p class="fx-lede">A one-day forum for in-house counsel, company secretaries, compliance, risk and IT heads, business owners, practitioners, regulators and academics: a morning plenary, two afternoon tracks, a closed roundtable for senior counsel and an evening of networking.</p>
+          <div class="fx-cta">
+            <a class="btn white" href="mailto:info@legalloungeorg.net?subject=Forum%202027%3A%20register%20my%20interest">Register interest</a>
+            <a class="btn fx-ghost" href="mailto:info@legalloungeorg.net?subject=Forum%202027%20partner">Become a partner</a>
+          </div>
+          <p class="fx-note">Early Bird tickets go on sale on 1 June 2027. The date and venue will be confirmed shortly.</p>
+        </div>
+        <ul class="fx-facts" aria-label="The Forum at a glance">
+          <li><b>2</b><span>tracks</span></li>
+          <li><b>100</b><span>delegates</span></li>
+          <li><b>1</b><span>closed roundtable</span></li>
+          <li><b>20</b><span>student places</span></li>
+        </ul>
+      </div>
+
+      <div class="fx-grid">
+        <article class="fx-card">
+          <p class="fx-tag">Morning plenary</p>
+          <h3>The state of the law for business</h3>
+          <ul><li>Opening keynote</li><li>Data protection two years on: licensing, DPOs, inspections and breaches</li><li>A fireside chat with a regulator (invited)</li><li>AI in the workplace: policies, contracts and liability</li></ul>
+        </article>
+        <article class="fx-card">
+          <p class="fx-tag">Track 1</p>
+          <h3>Data Protection and Tech Law</h3>
+          <ul><li>Preparing for a POTRAZ inspection</li><li>Contracting with technology suppliers</li><li>Cybersecurity incidents and what the law expects</li></ul>
+        </article>
+        <article class="fx-card">
+          <p class="fx-tag">Track 2</p>
+          <h3>Corporate, Registrations and IP</h3>
+          <ul><li>Re-registration and company compliance</li><li>Doing business across borders</li><li>IP for creatives and start-ups</li></ul>
+        </article>
+      </div>
+      <p class="fx-small">Draft programme. Session titles and speakers are being confirmed, and the in-house counsel roundtable runs under the Chatham House Rule, by invitation.</p>
+
+      <div class="fx-two">
+        <div>
+          <h3 class="fx-h">Tickets</h3>
+          <table class="fx-table">
+            <thead><tr><th scope="col">Release</th><th scope="col">Dates</th><th scope="col">US$</th></tr></thead>
+            <tbody>
+              <tr><td>Early Bird</td><td>1 June to 31 July 2027</td><td>60</td></tr>
+              <tr><td>Standard</td><td>August and September 2027</td><td>80</td></tr>
+              <tr><td>Final</td><td>1 to 20 October 2027</td><td>100</td></tr>
+              <tr><td>At the door</td><td>If places remain</td><td>120</td></tr>
+              <tr><td>Student</td><td>With a valid student card</td><td>25</td></tr>
+            </tbody>
+          </table>
+          <p class="fx-small">Every ticket includes both tracks, lunch, refreshments, the networking drinks and the delegate pack. Groups of 3 or more save 15%. Tickets are transferable but not refundable.</p>
+        </div>
+        <div>
+          <h3 class="fx-h">Partners</h3>
+          <table class="fx-table">
+            <thead><tr><th scope="col">Package</th><th scope="col">Includes</th><th scope="col">US$</th></tr></thead>
+            <tbody>
+              <tr><td>Headline (one only)</td><td>Naming, keynote introduction, premium stand, 8 passes</td><td>3,000</td></tr>
+              <tr><td>Gold</td><td>Names a track, panel seat, stand, 4 passes</td><td>1,500</td></tr>
+              <tr><td>Silver</td><td>Names a tea break, table, 2 passes</td><td>750</td></tr>
+              <tr><td>Exhibitor</td><td>Table in the exhibition, 1 pass</td><td>350</td></tr>
+            </tbody>
+          </table>
+          <p class="fx-small">Media, association and university partners are welcome in kind. For the partner pack, write to <a href="mailto:info@legalloungeorg.net?subject=Forum%202027%20partner">info@legalloungeorg.net</a>.</p>
+        </div>
+      </div>
+
+      <div class="fx-band">
+        <p><b>Before the Forum:</b> two free Forum Conversations evenings, on POTRAZ inspections in April and on AI and the law in July 2027. <b>After it:</b> the Forum report and papers, published by the Legal Lounge Publishing House.</p>
+      </div>
+    </div>
+  </section>
   <section class="maxim" aria-label="Universal Declaration of Human Rights">
     <div class="wrap">
       <blockquote>“All are equal before the law and are entitled without any discrimination to equal protection of the law.”</blockquote>
@@ -437,7 +554,7 @@ footer .fbrand b{color:#fff;font-size:1.05rem;letter-spacing:.06em}
   <div class="wrap cols">
     <div class="fbrand"><b>LEGAL LOUNGE</b><p>Consultancy · Forum · Press<br>Headquartered in Harare, Zimbabwe</p></div>
     <div><h4>Services</h4><ul><li><a href="#svc-dp">Data Protection</a></li><li><a href="#svc-reg">International Company Registrations</a></li><li><a href="#svc-it">Tech Law</a></li><li><a href="#svc-risk">Risk and Compliance</a></li><li><a href="#svc-ip">Intellectual Property</a></li><li><a href="#svc-case">Case Law Review</a></li><li><a href="#svc-research">Legal Research</a></li></ul></div>
-    <div><h4>Company</h4><ul><li><a href="#about">About Us</a></li><li><a href="#team">Our Team</a></li><li><a href="#forum">The Forum</a></li><li><a href="#mooting">Mooting</a></li><li><a href="#papers">Publishing House</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="#about">About Us</a></li><li><a href="#team">Our Team</a></li><li><a href="#forum">The Forum</a></li><li><a href="#forum-2027">Forum 2027</a></li><li><a href="#mooting">Mooting</a></li><li><a href="#papers">Publishing House</a></li></ul></div>
     <div><h4>Get in touch</h4><ul><li><a href="tel:+263716858720">0716858720</a></li><li><a href="mailto:info@legalloungeorg.net">info@legalloungeorg.net</a></li><li><a href="#contact">Contact us</a></li></ul></div>
   </div>
   <div class="wrap legal"><span>© 2026 Legal Lounge. All rights reserved.</span><span>Information on this site is general and is not legal advice.</span></div>
